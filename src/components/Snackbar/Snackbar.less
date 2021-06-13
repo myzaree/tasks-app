@@ -1,0 +1,79 @@
+@import 'settings';
+
+.SnackBarHolder {
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -moz-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -ms-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  -o-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  bottom: 40px;
+  left: 50%;
+  position: fixed;
+  z-index: 50;
+}
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 20px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 20px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+.SnackBar {
+  align-items: center;
+  background: #fff;
+  border: 1px solid @border-color;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  width: 250px;
+}
+.SnackBar > button {
+  background: transparent;
+  border: 0;
+  color: @text-color;
+  cursor: pointer;
+  outline: none;
+}
+
+.green-text {
+  color: #28a745;
+}
+
+.red-text {
+  color: @error;
+}

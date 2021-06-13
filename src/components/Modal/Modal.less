@@ -1,0 +1,57 @@
+@import 'settings';
+@import 'tools';
+
+@module: modal;
+
+.@{module} {
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  .flex(center, center);
+
+  &__window {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 350px;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 20;
+  }
+
+  &__backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+  }
+
+  &__close {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      width: 100%;
+      .flex(center, space-between);
+    }
+  }
+}
+
+.hide {
+  display: none;
+}

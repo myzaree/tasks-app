@@ -1,0 +1,54 @@
+@import 'tools';
+
+.loader-wrapper {
+  background: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  .flex(center, center);
+}
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+}
+.loader {
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+  border-bottom: 0.7em solid rgba(0, 130, 72);
+  border-left: 0.7em solid #ffffff;
+  border-right: 0.7em solid rgba(0, 130, 72);
+  border-top: 0.7em solid rgba(0, 130, 72);
+  font-size: 10px;
+  margin: 60px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

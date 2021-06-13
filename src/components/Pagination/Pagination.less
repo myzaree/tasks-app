@@ -1,0 +1,33 @@
+@import 'settings';
+@import 'tools';
+
+@module: pagination;
+
+.@{module} {
+  margin: 0 auto;
+  width: 100%;
+
+  &__list {
+    .flex(center, center);
+    margin-top: 10px;
+  }
+
+  .page {
+    background-color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+
+    &:hover:not(.active) {
+      background-color: @border-color;
+    }
+
+    &:disabled {
+      pointer-events: none;
+    }
+  }
+
+  .active {
+    background-color: @primary-color;
+    color: white;
+  }
+}

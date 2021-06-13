@@ -1,0 +1,38 @@
+.flex(@align: flex-start, @justify: flex-start, @direction: row) {
+  align-items: @align;
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+}
+
+.inline-flex(@align: flex-start, @justify: flex-start, @direction: row) {
+  align-items: @align;
+  display: inline-flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+}
+
+.form-styles() {
+  form {
+    margin-top: 10px;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  input {
+    border: 1px solid @border-color;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .error {
+    color: @error;
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+}

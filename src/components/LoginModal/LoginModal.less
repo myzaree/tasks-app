@@ -1,0 +1,22 @@
+@import 'settings';
+@import 'tools';
+
+@module: login;
+
+.@{module} {
+  position: relative;
+  .form-styles();
+  .flex(center, center, column);
+
+  &__button {
+    margin-top: 10px;
+    width: 100%;
+    .flex(center, center);
+  }
+
+  button {
+    font-size: 16px;
+    margin: auto;
+    padding: 10px 16px;
+  }
+}

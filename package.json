@@ -1,0 +1,74 @@
+{
+  "name": "task-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "axios": "^0.21.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.4",
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "start": "npm-run-all -p prettier-watch stylelint-watch start-js",
+    "start-js": "react-app-rewired start",
+    "prettier-watch": "onchange '**/*.ts' '**/*.tsx' '**/*.less' -- prettier --write {{changed}} ",
+    "stylelint-watch": "onchange '**/*.less' -- stylelint --fix {{changed}}",
+    "stylelint-check": "stylelint-config-prettier-check",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.6",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "babel-plugin-import": "^1.13.1",
+    "customize-cra": "^1.0.0",
+    "eslint-config-airbnb": "18.2.0",
+    "eslint-config-airbnb-typescript": "6.3.2",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
+    "node-less-chokidar": "^0.4.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "prettier": "^2.1.2",
+    "react-app-rewired": "^2.1.6",
+    "stylelint": "^13.7.2",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2"
+  }
+}
